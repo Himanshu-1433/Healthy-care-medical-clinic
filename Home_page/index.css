@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* for header/container/d-flex/box-1 */
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.d-flex .position-relative div.box1,
+.d-flex .position-relative div.box2 {
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(132, 255, 249, 0.664), rgb(5, 238, 255));
+    border: none;
+    border-radius: 0% 60%;
+    padding: 15px 50px;
+    top: -15px;
+    box-shadow: -0px -2px 20px gray;
+    animation-name: water;
+    animation-duration: 2s;
+    transition: 2s;
+    animation-iteration-count: infinite;
+}
+
+.d-flex .position-relative div.box2 {
+    transform: rotate(89deg);
+    border-radius: 0% 60%;
+    box-shadow: -0px -4px 20px gray;
+}
+
+.d-flex .heading p {
+    padding: 20px 0px 0px 0px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Keyframe for icon */
+
+@keyframes water {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header over*/
+
+
+/* main start  */
+section div.d-flex {
+    justify-content: center;
+}
+
+section div.position-relative {
+    top: -45px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section div.position-relative img {
+    max-width: 100%;
+    height: 43rem;
+}
+
+section div.position-relative .heading-image {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    width: 80%;
+    left: 100px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+section div.position-relative .heading-image p {
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+
+section div.heading-sec-box {
+    position: relative;
+    top: 60px;
+    z-index: -1;
+    width: 735px;
+    left: 16%;
+}
+
+section div.heading-sec-box p {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+section div.heading-sec-box p strong {
+    font-weight: 900;
+}
