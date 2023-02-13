@@ -18,8 +18,8 @@
         <!-- Nav -->
         <nav>
             <!-- navbar icon and heading  -->
-            <img src="../asset/Doctor-front-image" class="img-fluid">
-            <center>
+            <div class="position-relative">
+                <img src="../asset/Doctor-front-image" class="img-fluid">
                 <div class="container">
                     <div class="main-box">
                         <div class="box1"></div><!-- icon - 1-->
@@ -29,105 +29,98 @@
                         <p class="text-primary">HEALTHY CARE</p>
                     </div>
                 </div>
-            </center>
+                <!-- this is banner present -->
+                <div class="position-absolute">
+                    <div class="heading-image bg-primary">
+                        <p> MEDICAL CLINIC </p>
+                    </div>
+                    <div class="heading-sec-box bg-info">
+                        <p> LET US <strong> TAKE </strong> CARE OF YOU </p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Header end -->
     <!-- main start  -->
-    <main>
-        <!-- section for doctor image -->
-        <section>
-            <div class="position-relative">
-                <center>
-                    <div class="position-absolute">
-                        <div>
-                            <div class="heading-image bg-primary">
-                                <p> MEDICAL CLINIC </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="heading-sec-box bg-info">
-                                <p> LET US <strong> TAKE </strong> CARE OF YOU </p>
-                            </div>
-                        </div>
-                    </div>
-                </center>
-            </div>
-        </section>
+    <main class="container mt-100">
         <!-- section 2 for content -->
-        <section class="container position-relative">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card">
-                        <img src="../asset/Double-Quote.png" class="double-quote" alt="Double-Quote">
-                        <div class="about-us">
-                            <div class="box-title">
-                                <p>ABOUT <strong> US</strong></p>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="position-relative">
+                    <img src="../asset/Double-Quote.png" alt="double quote"
+                        style="width:4rem;margin: 10px 0px 0px 0px;">
+                    <p class="txt">ABOUT<strong>US</strong></p>
+                    <p class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque cum
+                        aliquam,
+                        mollitia tempora veritatis nemo earum sit, velit totam facilis porro ipsum, qui
+                        nihil
+                        modi? Saepe eius quod soluta? Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit.
+                        Magni eum similique eaque voluptatibus optio iure illum fugiat. Sapiente repudiandae
+                        rem
+                        eveniet nemo earum ab, aut fugiat, dolorum neque nesciunt corporis?</p>
+                </div>
+                <div class="position-relative" style="margin-top: 175px;">
+                    <h4>Special Attention <br> For <strong> COVID</strong></h4>
+                    <div class="row">
+                        <div class="col-lg-3 d-flex justify-content-center">
+                            <div class="feature-img">
+                                <img src="../asset/24hours.png" style="border-radius: 50%; width: 4rem;" alt="">
                             </div>
-                            <div class="box-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque cum
-                                    aliquam,
-                                    mollitia tempora veritatis nemo earum sit, velit totam facilis porro ipsum, qui
-                                    nihil
-                                    modi? Saepe eius quod soluta? Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit.
-                                    Magni eum similique eaque voluptatibus optio iure illum fugiat. Sapiente repudiandae
-                                    rem
-                                    eveniet nemo earum ab, aut fugiat, dolorum neque nesciunt corporis?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="card-title">Special Attention <br> For <strong> COVID</strong></h4>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="feature-img">
-                                        <img src="../asset/24hours.png" alt="">
-                                    </div>
-                                    <div class="feature-body">
-                                        <p>24 hours treat</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="feature-img">
-                                        <img src="../asset/mobile.png" alt="">
-                                    </div>
-                                    <div class="feature-body">
-                                        <p>Mobile chat</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="feature-img">
-                                        <img src="../asset/wear mask.png" alt="">
-                                    </div>
-                                    <div class="feature-body">
-                                        <p>Wear Mask</p>
-                                    </div>
-                                </div>
+                            <div class="feature-body">
+                                <p>24 hours treat</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="contact-us">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Contact Us</h5>
-                                <h6 class="card-subtitle mb-2">00 89 00 78 9878</h6>
-                                <h6 class="card-subtitle mb-2">email@gmail.com</h6>
-                                <div class="footer">
-                                    <i class="fa-solid fa-globe"> </i> WWW YOUR SITE URL
-                                </div>
+                        <div class="col-lg-3 d-flex justify-content-center">
+                            <div class="feature-img">
+                                <img src="../asset/mobile.png" style="border-radius: 50%; width: 4rem;" alt="">
+                            </div>
+                            <div class="feature-body">
+                                <p>Mobile chat</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 d-flex justify-content-center">
+                            <div class="feature-img">
+                                <img src="../asset/wear mask.png" style="border-radius: 50%; width: 4rem;" alt="">
+                            </div>
+                            <div class="feature-body">
+                                <p>Wear Mask</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div>
-                    </div>
+                <div class="position-relative mt-5">
+                    <p class="text-info">Contact Us</p>
+                    <p class="text-primary"><i class="fa-solid fa-phone"></i> 00 89 00 78 9878</p>
+                    <p class="text-primary"><i class="fa-solid fa-envelope"></i> email@gmail.com</p>
+                    <p class="text-primary"><i class="fa-solid fa-globe"> </i> WWW YOUR SITE URL</p>
                 </div>
             </div>
-        </section>
-
+            <div class="col-sm-4 mt-1">
+                <div class="image">
+                    <img src="../asset/Doctor.jpg" alt="Doctor">
+                </div>
+                <div class="info-bar">
+                    <p class="services">Our Services</p>
+                </div>
+                <div class="service-bar position-relative">
+                    <div class="txt-group">
+                        <p class="Title">Lorem Impsum</p>
+                        <p class="description">This is some description</p>
+                    </div>
+                    <div class="txt-group">
+                        <p class="Title">Lorem Impsum</p>
+                        <p class="description">This is some description</p>
+                    </div>
+                    <div class="txt-group">
+                        <p class="Title">Lorem Impsum</p>
+                        <p class="description">This is some description</p>
+                    </div>
+                    <img src="../asset/QR_code_for_mobile_English_Wikipedia.svg.webp" alt="this is qr code">
+                </div>
+            </div>
+        </div>
     </main>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script><!-- Bootstrap - 4 js file -->
     <script src="../bootstrap/js/bootstrap.min.js"></script><!-- Bootstrap - 4 js file-->
