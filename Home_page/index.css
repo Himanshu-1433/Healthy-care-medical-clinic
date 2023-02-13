@@ -4,24 +4,33 @@
 }
 
 /* for header/container/d-flex/box-1 */
-
-.d-flex {
-    display: flex;
-    justify-content: center;
-    gap: 110px;
-    align-items: center;
-    padding: 20px 10px;
-    margin: 10px 0px 0px 0px;
+img.img-fluid {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    z-index: -1;
+    border-bottom-left-radius: 10pc;
+    border-bottom-right-radius: 10pc;
 }
 
-.d-flex .position-relative div.box1,
-.d-flex .position-relative div.box2 {
+nav div.container {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    display: flex;
+    gap: 120px;
+
+}
+
+div.box1,
+div.box2 {
     position: absolute;
     background-image: linear-gradient(to right, rgba(132, 255, 249, 0.664), rgb(5, 238, 255));
     border: none;
     border-radius: 0% 60%;
     padding: 15px 50px;
-    top: -15px;
+    /* top: 40px;
+    left: 40%; */
     box-shadow: -0px -2px 20px gray;
     animation-name: water;
     animation-duration: 2s;
@@ -29,14 +38,14 @@
     animation-iteration-count: infinite;
 }
 
-.d-flex .position-relative div.box2 {
+div.box2 {
     transform: rotate(89deg);
     border-radius: 0% 60%;
     box-shadow: -0px -4px 20px gray;
 }
 
-.d-flex .heading p {
-    padding: 20px 0px 0px 0px;
+nav .container .main-box p {
+    padding: 5px 0px 0px 0px;
     font-weight: 900;
     font-size: 20px;
 }
@@ -65,49 +74,43 @@
 
 
 /* main start  */
-section div.d-flex {
-    justify-content: center;
-}
 
-section div.position-relative {
-    top: -45px;
-    z-index: -1;
+/* section 1 for top doctor image and  header section*/
+
+section.position-absolute {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-}
-
-section div.position-relative img {
-    max-width: 100%;
-    height: 43rem;
-}
-
-section div.position-relative .heading-image {
-    position: absolute;
-    text-align: center;
-    bottom: 0px;
     width: 80%;
-    left: 100px;
+    top: -50px;
+    left: 10%;
+}
+
+
+section.position-absolute .heading-image {
+    text-align: center;
+    width: 100%;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
 }
 
-section div.position-relative .heading-image p {
+section.position-absolute .heading-image p {
     font-size: 70px;
     font-weight: 900;
     color: white;
 }
 
-section div.heading-sec-box {
+section.position-absolute div.heading-sec-box {
     position: relative;
-    top: 60px;
+    margin: 0px;
+    top: -30px;
     z-index: -1;
     width: 735px;
-    left: 16%;
+    left: 0%;
 }
 
 section div.heading-sec-box p {
     font-size: 30px;
+    margin: 10px 0px;
     font-weight: 500;
     color: white;
     text-align: center;
@@ -115,4 +118,82 @@ section div.heading-sec-box p {
 
 section div.heading-sec-box p strong {
     font-weight: 900;
+}
+
+/* section 1 end  */
+
+
+/* section 2 start */
+
+section.container {
+    padding: 7% 0%;
+}
+
+section.container .row .col-md-8 .card img {
+    width: 10%;
+}
+
+section.container .row .col-md-8 .card:nth-child(1) {
+    margin: 10px;
+    height: 15rem;
+    border: none;
+}
+
+
+section.container .row .col-md-8 .card .about-us .box-title {
+    position: relative;
+    top: -40px;
+    margin: 0px 0px;
+}
+
+section.container .row .col-md-8 .card .about-us .box-title p {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(70, 92, 221);
+    letter-spacing: 1px;
+}
+
+section.container .row .col-md-8 .card .about-us .box-title p strong {
+    color: blue;
+    filter: blur(1px);
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0px 10px;
+}
+
+section.container .row .col-md-8 .card .about-us .box-body {
+    margin: -55px 0px;
+}
+
+section.container .row .col-md-8 .card .about-us .box-body p {
+    color: #0066ff;
+    font-weight: 500;
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) {
+    border: none;
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) .card-title {
+    text-align: right;
+    color: #00aeff;
+
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-4 .feature-img {
+    text-align: center;
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-4 .feature-img img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-4 .feature-body {
+    text-align: center;
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) .card-title strong {
+    font-weight: 800;
+    font-size: 37px;
 }
