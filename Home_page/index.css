@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
 }
 
 /* for header/container/d-flex/box-1 */
@@ -77,7 +78,7 @@ nav .container .main-box p {
 
 /* section 1 for top doctor image and  header section*/
 
-section.position-absolute {
+div.position-absolute {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -86,20 +87,20 @@ section.position-absolute {
 }
 
 
-section.position-absolute .heading-image {
+div.position-absolute .heading-image {
     text-align: center;
     width: 100%;
     border-bottom-right-radius: 40px;
     border-top-left-radius: 40px;
 }
 
-section.position-absolute .heading-image p {
+div.position-absolute .heading-image p {
     font-size: 70px;
     font-weight: 900;
     color: white;
 }
 
-section.position-absolute div.heading-sec-box {
+div.position-absolute div.heading-sec-box {
     position: relative;
     margin: 0px;
     top: -30px;
@@ -126,7 +127,7 @@ section div.heading-sec-box p strong {
 /* section 2 start */
 
 section.container {
-    padding: 7% 0%;
+    padding: 0% 0%;
 }
 
 section.container .row .col-md-8 .card img {
@@ -174,26 +175,49 @@ section.container .row .col-md-8 div.card:nth-child(2) {
     border: none;
 }
 
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row {
+    display: flex;
+    justify-content: space-between;
+}
+
 section.container .row .col-md-8 div.card:nth-child(2) .card-title {
     text-align: right;
     color: #00aeff;
-
+    letter-spacing: 5px;
+    font-weight: 700;
 }
 
-section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-4 .feature-img {
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-3 .feature-img {
     text-align: center;
 }
 
-section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-4 .feature-img img {
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-3 .feature-img img {
     width: 30%;
-    border-radius: 50%;
+    height: 15%;
+    border-radius: 47%;
 }
 
-section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-4 .feature-body {
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-3 .feature-body {
     text-align: center;
+
+}
+
+section.container .row .col-md-8 div.card:nth-child(2) .card-body .row .col-lg-3 {
+    width: 100px;
+    margin: 0px 10px;
+    color: #00aeff;
+    border-bottom: 5px double blue;
 }
 
 section.container .row .col-md-8 div.card:nth-child(2) .card-title strong {
     font-weight: 800;
     font-size: 37px;
+}
+
+section.container .contact-us .card {
+    width: 16rem;
+}
+
+section.container .contact-us .card .card-body {
+    height: 100px;
 }
