@@ -7,8 +7,8 @@
 /* for header/container/d-flex/box-1 */
 img.img-fluid {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     border-bottom-left-radius: 10pc;
     border-bottom-right-radius: 10pc;
@@ -17,18 +17,12 @@ img.img-fluid {
 
 /* responsive for header */
 
-@media screen and (max-width: 375px) {
-    img.img-fluid {
-        display: block;
-        max-width: 100em;
-        max-height: 330px;
-    }
-}
+
 
 nav div.container {
     position: absolute;
     top: 7%;
-    left: 50%;
+    left: 39%;
     display: flex;
     gap: 120px;
     width: 310px;
@@ -41,8 +35,6 @@ div.box2 {
     border: none;
     border-radius: 0% 60%;
     padding: 15px 50px;
-    /* top: 40px;
-    left: 40%; */
     box-shadow: -0px -2px 20px gray;
     animation-name: water;
     animation-duration: 2s;
@@ -60,6 +52,8 @@ nav .container .main-box p {
     padding: 5px 0px 0px 0px;
     font-weight: 900;
     font-size: 20px;
+    margin: 0px 105px;
+    width: 100%;
 }
 
 /* Keyframe for icon */
@@ -141,6 +135,10 @@ section div.heading-sec-box p strong {
 
 /* section 2 start */
 
+.col-sm-8 .position-relative:nth-child(2) {
+    margin-top: 175px;
+}
+
 .row .col-sm-8 section:nth-child(1) img {
     width: 10%;
 }
@@ -153,6 +151,7 @@ section div.heading-sec-box p strong {
     color: rgb(70, 92, 221);
     letter-spacing: 1px;
 }
+
 
 .txt strong {
     color: blue;
@@ -292,5 +291,84 @@ div.image img {
 
     100% {
         border-radius: 20% 10%;
+    }
+}
+
+/* media query for the header */
+
+@media screen and (max-width: 380px) {
+    img.img-fluid {
+        display: block;
+        max-width: 100em;
+        max-height: 330px;
+    }
+
+    div.box1,
+    div.box2 {
+        padding: 5px 25px;
+    }
+
+    nav div.container {
+        position: absolute;
+        left: 0%;
+        top: 8%;
+    }
+
+    nav .container .main-box p {
+        margin: -9px 55px;
+        left: 10px;
+        font-size: 13px;
+    }
+
+    div.position-absolute .heading-image p {
+        font-size: 25px;
+    }
+
+    div.heading-sec-box p {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    div.position-absolute div.heading-sec-box {
+        left: 45px;
+        text-align: center;
+        top: 150px;
+        width: 200px;
+    }
+
+    div.position-absolute {
+        bottom: 0px;
+    }
+
+    div.position-absolute div.heading-sec-box {
+        top: 50px;
+    }
+
+    div.position-absolute div.heading-sec-box p {
+        text-align: center;
+    }
+
+    main.container {
+        margin-top: 30px;
+    }
+
+    .context {
+        position: relative;
+        top: 30px;
+        font-size: 12px;
+    }
+
+    .col-sm-8 .position-relative:nth-child(2) {
+        margin-top: 40px;
+    }
+
+    .position-relative div.row .col-lg-3 {
+        margin: 10px 30px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        text-align: left;
+        align-items: self-start;
     }
 }
