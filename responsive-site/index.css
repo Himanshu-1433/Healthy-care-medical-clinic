@@ -7,11 +7,22 @@
 /* for header/container/d-flex/box-1 */
 img.img-fluid {
     position: relative;
-    width: 100%;
-    height: 50rem;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     border-bottom-left-radius: 10pc;
     border-bottom-right-radius: 10pc;
+}
+
+
+/* responsive for header */
+
+@media screen and (max-width: 375px) {
+    img.img-fluid {
+        display: block;
+        max-width: 100em;
+        max-height: 330px;
+    }
 }
 
 nav div.container {
@@ -185,7 +196,7 @@ section div.heading-sec-box p strong {
 }
 
 .position-relative .logo-section .d-flex img:hover {
-    transform: translate(0px , -8px);
+    transform: translate(0px, -8px);
 }
 
 .position-relative .logo-section .d-flex {
@@ -283,5 +294,3 @@ div.image img {
         border-radius: 20% 10%;
     }
 }
-
-/* responsive */
