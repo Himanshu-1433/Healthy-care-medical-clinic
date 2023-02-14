@@ -371,4 +371,9 @@ div.image img {
         text-align: left;
         align-items: self-start;
     }
+
+    .service-bar img{
+        position: relative;
+        margin: 0px 40px;
+    }
 }
