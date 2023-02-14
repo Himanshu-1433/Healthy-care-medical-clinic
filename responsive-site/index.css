@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+/* for header/container/d-flex/box-1 */
+img.img-fluid {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    z-index: -1;
+    border-bottom-left-radius: 10pc;
+    border-bottom-right-radius: 10pc;
+}
+
+nav div.container {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    display: flex;
+    gap: 120px;
+    width: 310px;
+}
+
+div.box1,
+div.box2 {
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(132, 255, 249, 0.664), rgb(5, 238, 255));
+    border: none;
+    border-radius: 0% 60%;
+    padding: 15px 50px;
+    /* top: 40px;
+    left: 40%; */
+    box-shadow: -0px -2px 20px gray;
+    animation-name: water;
+    animation-duration: 2s;
+    transition: 2s;
+    animation-iteration-count: infinite;
+}
+
+div.box2 {
+    transform: rotate(89deg);
+    border-radius: 0% 60%;
+    box-shadow: -0px -4px 20px gray;
+}
+
+nav .container .main-box p {
+    padding: 5px 0px 0px 0px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Keyframe for icon */
+
+@keyframes water {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header over*/
+
+
+/* main start  */
+
+main.mt-100 {
+    margin-top: 10rem;
+}
+
+/* section 1 for top doctor image and  header section*/
+
+div.position-absolute {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    bottom: -100px;
+    left: 10%;
+}
+
+
+div.position-absolute .heading-image {
+    text-align: center;
+    width: 100%;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+div.position-absolute .heading-image p {
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+
+div.position-absolute div.heading-sec-box {
+    position: absolute;
+    margin: 0px;
+    top: 120px;
+    z-index: -1;
+    width: 735px;
+    left: 10rem;
+}
+
+div.heading-sec-box p {
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+section div.heading-sec-box p strong {
+    font-weight: 900;
+}
+
+/* section 1 end  */
+
+
+/* section 2 start */
+
+.row .col-sm-8 section:nth-child(1) img {
+    width: 10%;
+}
+
+.txt {
+    position: absolute;
+    top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(70, 92, 221);
+    letter-spacing: 1px;
+}
+
+.txt strong {
+    color: blue;
+    filter: blur(0px);
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0px 10px;
+}
+
+
+.context {
+    color: #0A5190;
+    font-weight: 500;
+    position: absolute;
+    top: 100px;
+}
+
+.position-relative h4 {
+    text-align: right;
+    color: #0A5190;
+}
+
+.position-relative div.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.position-relative div.row .col-lg-3 {
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 10px;
+    color: #0A5190;
+    border-bottom: 5px double #0A5190;
+}
+
+.position-relative .logo-section .d-flex img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 5px;
+    transition: .5s;
+}
+
+.position-relative .logo-section .d-flex img:hover {
+    transform: translate(0px , -8px);
+}
+
+.position-relative .logo-section .d-flex {
+    margin-left: 15em;
+    margin-top: -10px;
+}
+
+/* col sm 4 start */
+
+div.image img {
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px #0A5190;
+    width: 15rem;
+    margin-left: 50px;
+}
+
+.info-bar {
+    background-color: blue;
+    padding: 10px 30px;
+    border-top-left-radius: 30px;
+    text-align: right;
+}
+
+.info-bar .services {
+    margin: 10px 0px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.service-bar {
+    text-align: right;
+    height: 23rem;
+    margin-left: 40px;
+    background-color: aqua;
+    color: white;
+}
+
+.service-bar .txt-group {
+    line-height: 2em;
+    margin: 0px 30px;
+}
+
+.service-bar .txt-group .Title {
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.service-bar .txt-group .Title:hover {
+    transform: translate(-5px, -5px);
+}
+
+.service-bar img {
+    background-color: antiquewhite;
+    border: 15px solid blue;
+    border-radius: 30% 0%;
+    width: 10em;
+    position: absolute;
+    left: -90px;
+    bottom: 0px;
+    animation: border;
+    animation-duration: 3s;
+    transition: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* Keyframe for qr code */
+
+@keyframes border {
+    0% {
+        border-radius: 25% 5%;
+    }
+
+    20% {
+        border-radius: 20% 10%;
+    }
+
+    40% {
+        border-radius: 10% 20%;
+    }
+
+    60% {
+        border-radius: 5% 25%;
+    }
+
+    80% {
+        border-radius: 10% 20%;
+    }
+
+    100% {
+        border-radius: 20% 10%;
+    }
+}
+
+/* responsive */
